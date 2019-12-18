@@ -10,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: SFML Compilation
-      run: git clone https://github.com/SFML/CSFML && cd CSFML && git checkout $(git describe --tags $(git rev-list --tags --max-count=1)) && cmake . && make && sudo make install && cd ..
+      run: git clone https://github.com/SFML/SFML && cd SFML && git checkout $(git describe --tags $(git rev-list --tags --max-count=1)) && cmake . && make && sudo make install && cd ..
     - name: CSFML Compilation
       run: git clone https://github.com/SFML/CSFML && cd CSFML && git checkout $(git describe --tags $(git rev-list --tags --max-count=1)) && cd CSFML && SFML="$(realpath ../SFML)" && cmake -DCMAKE_MODULE_PATH="$SFML/cmake/Modules" . && make && sudo make install && cd ..
     - name: Basic compilation
