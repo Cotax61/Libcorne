@@ -18,9 +18,8 @@ int corn_check_clock(sfClock *clock, float time, sfBool restart)
     float f_time = sfTime_asSeconds(clock_time);
 
     if (f_time > time) {
-        if (restart == sfTrue) {
+        if (restart == sfTrue)
             sfClock_restart(clock);
-        }
         return (1);
     }
     return (0);

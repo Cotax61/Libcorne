@@ -15,6 +15,11 @@ static void corn_write_error(const char *str)
         write(2, &str[i], 1);
 }
 
+/**
+* \file corn_load_sound.c
+* \author Alexandre Descoins
+* \version 1
+*/
 sfMusic *corn_load_sound(const char *path, float volume, float pitch)
 {
     sfMusic *music = sfMusic_createFromFile(path);

@@ -7,6 +7,11 @@
 
 #include <SFML/Graphics.h>
 
+/**
+* \file corn_create_text.c
+* \author Alexandre Descoins
+* \version 1
+*/
 sfText *corn_create_text(const char *str, int size, sfFont *font, sfColor color)
 {
     sfText *text = sfText_create();
