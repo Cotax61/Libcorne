@@ -10,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Depedencies installation
-      run: sudo apt update && sudo apt install build-essential cmake git libx11-dev freeglut3-dev libxcb-image0-dev libudev-dev libjpeg8-dev libopenal-dev libsndfile1-dev libfreetype6-dev
+      run: sudo apt update && sudo apt upgrade && sudo apt install build-essential cmake git libx11-dev freeglut3-dev libxcb-image0-dev libudev-dev libjpeg8-dev libopenal-dev libsndfile1-dev libfreetype6-dev
     - name: SFML Compilation
       run: git clone https://github.com/SFML/SFML && cd SFML && git checkout $(git describe --tags $(git rev-list --tags --max-count=1)) && cmake . && make && sudo make install && cd ..
     - name: CSFML Compilation
