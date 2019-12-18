@@ -13,6 +13,8 @@ SRC		=	src/corn_apply_gravity.c \
 
 OBJ		=	$(SRC:.c=.o)
 
+CFLAGS 	=	-Wall -Wextra -Werror -I./include/
+
 TARGET	=	libcorn.a
 
 YELLOW	=	\033[1;35m
@@ -22,9 +24,9 @@ NORMAL	=	\033[0;39m
 all:	$(TARGET)
 
 $(TARGET): $(OBJ)
-	@echo -e "$(YELLOW)Compiling libcorn....$(NORMAL)"
+	@echo -e "$(YELLOW)Linking libcorn....$(NORMAL)"
 	ar rc $(TARGET) $(OBJ)
-	@echo -e "$(PURPLE)Lib successfully compiled !$(NORMAL)"
+	@echo -e "$(PURPLE)Lib successfully linked !$(NORMAL)"
 
 clean:
 	rm -f $(OBJ)

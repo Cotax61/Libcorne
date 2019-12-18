@@ -1,0 +1,35 @@
+\hypertarget{corn__check__clock_8c}{}\section{src/corn\+\_\+check\+\_\+clock.c File Reference}
+\label{corn__check__clock_8c}\index{src/corn\+\_\+check\+\_\+clock.\+c@{src/corn\+\_\+check\+\_\+clock.\+c}}
+{\ttfamily \#include $<$S\+F\+M\+L/\+System.\+h$>$}\newline
+Include dependency graph for corn\+\_\+check\+\_\+clock.\+c\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{corn__check__clock_8c_a9639b61e80fb18f418458cfbde8d7707}{corn\+\_\+check\+\_\+clock} (sf\+Clock $\ast$clock, float time, sf\+Bool restart)
+\begin{DoxyCompactList}\small\item\em check if the clock went past the given max time \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{corn__check__clock_8c_a9639b61e80fb18f418458cfbde8d7707}\label{corn__check__clock_8c_a9639b61e80fb18f418458cfbde8d7707}} 
+\index{corn\+\_\+check\+\_\+clock.\+c@{corn\+\_\+check\+\_\+clock.\+c}!corn\+\_\+check\+\_\+clock@{corn\+\_\+check\+\_\+clock}}
+\index{corn\+\_\+check\+\_\+clock@{corn\+\_\+check\+\_\+clock}!corn\+\_\+check\+\_\+clock.\+c@{corn\+\_\+check\+\_\+clock.\+c}}
+\subsubsection{\texorpdfstring{corn\+\_\+check\+\_\+clock()}{corn\_check\_clock()}}
+{\footnotesize\ttfamily int corn\+\_\+check\+\_\+clock (\begin{DoxyParamCaption}\item[{sf\+Clock $\ast$}]{clock,  }\item[{float}]{time,  }\item[{sf\+Bool}]{restart }\end{DoxyParamCaption})}
+
+
+
+check if the clock went past the given max time 
+
+
+\begin{DoxyParams}{Parameters}
+{\em clock} & clock of the window \\
+\hline
+{\em time} & max time \\
+\hline
+{\em restart} & will it restart the clock \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int did the clock went past the given max time 
+\end{DoxyReturn}

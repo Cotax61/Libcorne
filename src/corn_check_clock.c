@@ -7,6 +7,11 @@
 
 #include <SFML/System.h>
 
+/**
+* \file corn_check_clock.c
+* \author Alexandre Descoins
+* \version 1
+*/
 int corn_check_clock(sfClock *clock, float time, sfBool restart)
 {
     sfTime clock_time = sfClock_getElapsedTime(clock);
