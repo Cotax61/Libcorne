@@ -12,7 +12,7 @@
 * \author Alexandre Descoins
 * \version 1
 */
-sfSprite *corn_load_sprite_form_file(char *filepath, sfTexture **texture)
+sfSprite *corn_load_sprite_from_file(char *filepath, sfTexture **texture)
 {
     sfSprite *new = NULL;
 

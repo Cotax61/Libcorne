@@ -21,20 +21,19 @@ TARGET	=	libcorn.a
 PURPLE	=	\033[1;35m
 GREEN	=	\033[1;92m
 YELLOW	=	\033[1;33m
-
 NORMAL	=	\033[0;39m
 
 all:	$(TARGET)
 
 goodbye:
-	@echo -ne "\033[5;32m"
+	@echo -ne "\033[1;5;34m"
 	@echo -e " ___   ___  ___  ___  ___       ___"
 	@echo -e "/   | |   ||   ||   \|   / \ / |    "
 	@echo -e "|   __|   ||   ||   ||---\  |  |--  "
 	@echo -e "|___/ |___||___||___/|___/  |  |___$(NORMAL)"
 
 build_text:
-	@echo -e "$(PURPLE)building libcorn....$(PURPLE)"
+	@echo -e "$(PURPLE)Building libcorn....$(PURPLE)"
 
 $(TARGET): build_text $(OBJ)
 	@echo -e "$(YELLOW)Linking libcorn....$(YELLOW)"
